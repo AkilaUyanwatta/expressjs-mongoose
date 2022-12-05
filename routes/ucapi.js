@@ -318,6 +318,8 @@ function getResponse(uuid) {
       return importOrderResponse.UC76_A;
     case "UC76_B":
       return importOrderResponse.UC76_B;
+    case "FP":
+      return importOrderResponse.orderTestFP;
     case "C1":
       return importOrderResponse.collection1Response
     case "C2":

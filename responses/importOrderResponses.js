@@ -4108,6 +4108,38 @@ const JYSKData4206011448 =
    
 };
 
+
+
+const orderTestFP = {
+  posInstructions: [
+    {
+      action: "setItem",
+      itemId: "5",
+      quantity: 1,
+      price: 900,
+      ucOrder: "test_2",
+      ucLineItem: 4,
+      forcePrice: true,
+    },
+    {
+      action: "setItem",
+      itemId: "6",
+      quantity: 1,
+      price: 1000,
+      ucOrder: "test_2",
+      ucLineItem: 4,
+    },
+    {
+      action: "setItem",
+      itemId: "7",
+      quantity: 1,
+      price: 1000,
+      ucOrder: "test_2",
+      ucLineItem: 4,
+    },
+  ],
+};
+
 exports.addItemResponse = addItemResponse;
 exports.addItemResponseWithPrices = addItemResponseWithPrices;
 exports.addItemResponseWithOrderDespoit = addItemResponseWithOrderDespoit;
@@ -4220,3 +4252,5 @@ exports.collection6Response = collection6Response;
 exports.collection7Response = collection7Response;
 exports.collection8Response = collection8Response;
 exports.collection9Response = collection9Response;
+
+exports.orderTestFP = orderTestFP;
