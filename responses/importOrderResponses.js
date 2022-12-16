@@ -4112,31 +4112,32 @@ const JYSKData4206011448 =
 
 const orderTestFP = {
   posInstructions: [
-    {
-      action: "setItem",
-      itemId: "5",
-      quantity: 1,
-      price: 1100,
-      ucOrder: "test_2",
-      ucLineItem: 4,
-      forcePrice: true,
-    },
+    // {
+    //   action: "setItem",
+    //   itemId: "5",
+    //   quantity: 1,
+    //   price: 1100,
+    //   ucOrder: "test_2",
+    //   ucLineItem: 4,
+    //   forcePrice: true,
+    // },
     {
       action: "setItem",
       itemId: "6",
       quantity: 1,
-      price: 600,
+      price: 6000,
       ucOrder: "test_2",
       ucLineItem: 4,
+      forcePrice: true,
     },
-    {
-      action: "setItem",
-      itemId: "7",
-      quantity: 1,
-      price: 11000,
-      ucOrder: "test_2",
-      ucLineItem: 4,
-    },
+    // {
+    //   action: "setItem",
+    //   itemId: "7",
+    //   quantity: 1,
+    //   price: 11000,
+    //   ucOrder: "test_2",
+    //   ucLineItem: 4,
+    // },
   ],
 };
 
