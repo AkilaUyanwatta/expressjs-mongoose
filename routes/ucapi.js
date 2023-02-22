@@ -256,11 +256,11 @@ function getResponse(uuid) {
       return importOrderResponse.orderTest20Response;
     case "33":
       return importOrderResponse.orderTest21Response;
-    case "34":
+    case "TR1":
       return importOrderResponse.orderTest22Response;
-    case "35":
+    case "TR2":
       return importOrderResponse.orderTest23Response;
-    case "36":
+    case "TR3":
       return importOrderResponse.orderTest24Response;
     case "j1":
       return importOrderResponse.JYSKData1;
