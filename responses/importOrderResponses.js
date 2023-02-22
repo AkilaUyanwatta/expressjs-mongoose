@@ -1872,6 +1872,7 @@ const orderTest15Response = {
   ],
 };
 
+
 const orderTest2Response = {
   posInstructions: [
     {
@@ -3538,6 +3539,7 @@ const collection9Response = {
 };
 
 
+
 const orderTest18Response = {
   posInstructions: [
     {
@@ -3678,6 +3680,74 @@ orderTest21Response = {
     },
   ],
 };
+
+
+
+
+const orderTest22Response = {
+  posInstructions: [
+    {
+      action: "setItem",
+      itemId: "tr-01",
+      quantity: 2,
+      price: 10000,
+      ucOrder: "test_4",
+      ucLineItem: 1,
+    },
+    {
+      action: "setDeliveryOption",
+      type: "address",
+      description: "Address delivery",
+      reference: "addressDelivery",
+    },
+    {
+      action: "addTenderItem",
+      tenderId: "CASH",
+      tenderAmount: 2500,
+      ucTenderType: "PREPAYMENT",
+    },
+  ],
+};
+const orderTest23Response = {
+  posInstructions: [
+    {
+      action: "setItem",
+      itemId: "tr-01",
+      quantity: 3,
+      price: 15000,
+      ucOrder: "test_5",
+      ucLineItem: 1,
+      fulfilledQuantity: 1,
+    },
+    {
+      action: "setDeliveryOption",
+      type: "address",
+      description: "Address delivery",
+      reference: "addressDelivery",
+    },
+  ],
+};
+const orderTest24Response = {
+  posInstructions: [
+    {
+      action: "setItem",
+      itemId: "tr-01",
+      quantity: 2,
+      price: 10000,
+      ucOrder: "test_5",
+      ucLineItem: 1,
+    },
+    {
+      action: "setDeliveryOption",
+      type: "store",
+      lineNo: 1,
+      description: "Store delivery",
+      reference: "locationCollectionDelivery",
+    },
+  ],
+}
+
+
 const JYSKData2 = {
   posInstructions:  [ 
 		{
@@ -4196,6 +4266,9 @@ exports.orderTest18Response=orderTest18Response;
 exports.orderTest19Response=orderTest19Response;
 exports.orderTest20Response=orderTest20Response;
 
+exports.orderTest22Response=orderTest22Response;
+exports.orderTest23Response=orderTest23Response;
+exports.orderTest24Response=orderTest24Response;
 
 
 // UC specific
