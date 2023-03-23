@@ -34,6 +34,7 @@ const addItemResponse = {
   ],
 };
 
+
 const addItemResponseWithNotes = {
   posInstructions: [
     ...addItemResponse.posInstructions,
@@ -4039,6 +4040,104 @@ const JYSKData7 =
 };
 
 
+const JYSKData8 =
+{
+  "posInstructions" : [ {
+    "action" : "setTxText",
+    "operation" : "CREATE",
+    "position" : "com.jysk.pos.uc.working-copy-business-key",
+    "value" : "7de68177-b115-47a0-9f77-516c20d4b179"
+  }, {
+    "action" : "setTxText",
+    "operation" : "CREATE",
+    "position" : "com.jysk.pos.uc.sync-order.id",
+    "value" : "7de68177-b115-47a0-9f77-516c20d4b179"
+  }, {
+    "action" : "setItem",
+    "action" : "setItem",
+    "operation" : "CREATE",
+    "itemId" : "2323200",
+    "quantity" : 1,
+    "price" : 7800.00,
+    "ucOrder" : "7de68177-b115-47a0-9f77-516c20d4b179",
+    "ucLineItem" : "1",
+    "data" : {
+      "ucImportedOrder" : "4300337241",
+      "ucLineItem" : "1",
+      "ucLine-import-created-by-store" : "D001",
+      "ucOrder" : "7de68177-b115-47a0-9f77-516c20d4b179",
+      "ucLine-import-type" : "CUSTOMER_ORDER",
+      "ucLine-import-delivery-group-id" : "1",
+      "ucLineItem-import" : "1",
+      "ucLine-import-request-type" : "EDIT"
+    },
+    "forcePrice" : false
+  }, {
+    "action" : "setDeliveryOption",
+    "operation" : "CREATE",
+    "type" : "store",
+    "reference" : "locationCollectionDelivery",
+    "promise" : ""
+  }, {
+    "action" : "setItem",
+    "action" : "setItem",
+    "operation" : "CREATE",
+    "itemId" : "2323200",
+    "quantity" : 1,
+    "price" : 7800.00,
+    "ucOrder" : "7de68177-b115-47a0-9f77-516c20d4b179",
+    "ucLineItem" : "2",
+    "data" : {
+      "ucImportedOrder" : "4300337241",
+      "ucLineItem" : "2",
+      "ucLine-import-created-by-store" : "D001",
+      "ucOrder" : "7de68177-b115-47a0-9f77-516c20d4b179",
+      "ucLine-import-type" : "CUSTOMER_ORDER",
+      "ucLine-import-delivery-group-id" : "1",
+      "ucLineItem-import" : "2",
+      "ucLine-import-request-type" : "EDIT"
+    },
+    "forcePrice" : false
+  }, {
+    "action" : "setDeliveryOption",
+    "operation" : "CREATE",
+    "type" : "store",
+    "reference" : "locationCollectionDelivery",
+    "promise" : ""
+  }, {
+    "action" : "setTxText",
+    "operation" : "CREATE",
+    "position" : "com.jysk.pos.uc.import-order.id",
+    "value" : "5760fd2a-02c4-40d6-b54a-9ffa92ba5154"
+  }, {
+    "action" : "setTxText",
+    "operation" : "CREATE",
+    "position" : "com.jysk.pos.uc.sales-order-number",
+    "value" : "4300337241"
+  }, {
+    "action" : "setTxText",
+    "operation" : "CREATE",
+    "position" : "com.jysk.pos.uc.customer.type",
+    "value" : "B2C"
+  }, {
+    "action" : "setPartyType",
+    "operation" : "CREATE",
+    "partyType" : "B2C"
+  }, {
+    "action" : "setCustomer",
+    "action" : "setCustomer",
+    "operation" : "CREATE",
+    "firstName" : "JYSK-3500-01",
+    "lastName" : "JYSK-3500-01",
+    "companyName" : " ",
+    "customerGroupId" : "",
+    "resetCustomerGroups" : true
+  } ]
+};
+
+
+
+
 
 
 
@@ -4307,6 +4406,7 @@ exports.JYSKData4 = JYSKData4;
 exports.JYSKData5 = JYSKData5;
 exports.JYSKData6 = JYSKData6;
 exports.JYSKData7 = JYSKData7;
+exports.JYSKData8 = JYSKData8;
 exports.JYSKData4206011448 = JYSKData4206011448;
 
 // party type

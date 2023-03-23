@@ -276,6 +276,8 @@ function getResponse(uuid) {
       return importOrderResponse.JYSKData6;
     case "j7":
       return importOrderResponse.JYSKData7;
+    case "j8":
+      return importOrderResponse.JYSKData7;
     case "4207158369":
       return importOrderResponse.JYSKData4206011448;
     // New responses
