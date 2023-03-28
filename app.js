@@ -23,6 +23,7 @@ app.use(express.static(path.join(__dirname, "public")));
 app.use("/", indexRouter);
 app.use("/auth/realms/dev/protocol/openid-connect/", openIdRouter);
 app.use("/rest/enactor/orders/", ucapiRouter);
+app.use("/apis/enactor/v2/orders/", ucapiRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
