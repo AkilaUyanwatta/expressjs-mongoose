@@ -4387,6 +4387,112 @@ const F11collection1Response = {
   ]
 };
 
+const F11collection2Response = {
+  posInstructions: [
+    {
+      action: "addCollectionHeaderItem",
+      customerOrderId: "1",
+      isExternalOrder: true,
+      data: {
+        ucOrder: "12345"
+      }
+    },
+    {
+      action: "addCollectionItem",
+      orderUnitPrice: 5500,
+      orderNetPrice: 5500,
+      orderTaxAmount: 0,
+      orderNotes: "Test notes",
+      collectionQuantity: 1,
+      collectionProductId: "TR-01",
+      orderLineNumber: 1,
+      itemValue: 0,
+      depositDetails: {
+        "@type": "depositDetails",
+        "depositDetail": [
+          {
+            "@type": "depositDetail",
+            "depositAmount": 5500,
+            "depositTax": [
+              {
+                "@type": "taxAmount",
+                "taxRateId": "TR-1",
+                "taxRateKey": {
+                  "taxRateId": "TR-1",
+                  "effectiveDate": 1663525800000
+                },
+                "displayTaxCode": "18%",
+                "taxAmount": 8380000,
+                "scale": 4,
+                "taxRatePercentage": 0.18
+              },
+            ],
+            depositTenders: [
+             {
+               "@type": "depositTenderDetail",
+               "tenderKey": {
+                 "tenderId": "CASH_TR",
+                 "groupId": {
+                      "id": "All",
+                      "groupTypeId": "region",
+                      "groupHierarchyId": "All",
+                      "groupId": "TURKEY"
+                  }
+                 },
+                "depositAmount": "5500"
+             }
+            ]
+          }
+        ]
+      },
+      adjustments : [
+        {
+          "@type" : "customerOrderAdjustment",
+          "adjustmentNumber" : 1,
+          "adjustmentType" : "PRICE_OVERRIDE",
+          "adjustmentDetail" : "PO-TR1",
+          "description" : "Price Override Down",
+          "voided" : false,
+          "amount" : -400,
+          "reasonKey" : {
+          	"reasonId" : "PO-TR1",
+          	"regionId": {
+                      "id": "All",
+                      "groupTypeId": "region",
+                      "groupHierarchyId": "All",
+                      "groupId": "TURKEY"
+                  }
+          }   		
+      	}
+      ],
+      data: {
+       ucLineItem: "1"
+      }
+    },
+    {
+      action: "setCustomer",
+      customerId: "1",
+      firstName: "John",
+      lastName: "Smith",
+      customerTaxAreaId: "1234",
+      initials: "A.B.C",
+      title: "Mr",
+      sex: "FEMALE",
+      dateOfBirth: 1679649452671,
+      otherNames: "Test Other Name",
+      jobTitle: "Software Enginner",
+      organisation: "Test Organisation",
+      customerAddress : {
+        countryCodeId : {
+          "id" : "TR"
+        },
+        street1 : "Street One",
+        street2 : "Street Two"
+      }
+    },
+  ]
+}
+
 exports.addItemResponse = addItemResponse;
 exports.addItemResponseWithPrices = addItemResponseWithPrices;
 exports.addItemResponseWithOrderDespoit = addItemResponseWithOrderDespoit;
@@ -4508,3 +4614,5 @@ exports.orderTestFP = orderTestFP;
 
 //f11 exports
 exports.F11collection1Response =  F11collection1Response;
+exports.F11collection2Response =  F11collection2Response;
+
