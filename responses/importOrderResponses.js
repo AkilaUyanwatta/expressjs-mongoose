@@ -4547,7 +4547,7 @@ const F11collection3Response = {
                  },
                 "depositAmount": "5500"
              }
-            ]
+            ],  
           }
         ]
       },
@@ -4565,7 +4565,29 @@ const F11collection3Response = {
       data: {
        ucLineItem: "1"
       }
+    },
+    {
+      action: "setCustomer",
+      customerId: "1",
+      firstName: "John",
+      lastName: "Smith",
+      customerTaxAreaId: "1234",
+      initials: "A.B.C",
+      title: "Mr",
+      sex: "FEMALE",
+      dateOfBirth: 1679649452671,
+      otherNames: "Test Other Name",
+      jobTitle: "Software Enginner",
+      organisation: "Test Organisation",
+      customerAddress : {
+        countryCodeId : {
+          "id" : "TR"
+        },
+        street1 : "Street One",
+        street2 : "Street Two"
+      }
     }
+
   ]
 };
 
@@ -4640,6 +4662,27 @@ const F11collection4Response = {
       ],
       data: {
        ucLineItem: "1"
+      }
+    },
+    {
+      action: "setCustomer",
+      customerId: "1",
+      firstName: "John",
+      lastName: "Smith",
+      customerTaxAreaId: "1234",
+      initials: "A.B.C",
+      title: "Mr",
+      sex: "FEMALE",
+      dateOfBirth: 1679649452671,
+      otherNames: "Test Other Name",
+      jobTitle: "Software Enginner",
+      organisation: "Test Organisation",
+      customerAddress : {
+        countryCodeId : {
+          "id" : "TR"
+        },
+        street1 : "Street One",
+        street2 : "Street Two"
       }
     }
   ]
