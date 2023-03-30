@@ -4571,7 +4571,7 @@ const F11collection3Response = {
       customerId: "1",
       firstName: "John",
       lastName: "Smith",
-      customerTaxAreaId: "1234",
+      taxIdentification: "1234",
       initials: "A.B.C",
       title: "Mr",
       sex: "FEMALE",
