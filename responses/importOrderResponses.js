@@ -4763,113 +4763,6 @@ const F11collection5Response = {
   ]
 };
 
-const F11collection7Response = {
-  posInstructions: [
-    {
-      action: "addCollectionHeaderItem",
-      customerOrderId: "1",
-      isExternalOrder: true,
-      data: {
-        ucOrder: "12345"
-      }
-    },
-    {
-      action: "addCollectionItem",
-      orderUnitPrice: 5100,
-      orderNetPrice: 3727,
-      orderTaxAmount: 0, 
-      orderNotes: "Test notes",
-      collectionQuantity: 1,
-      collectionProductId: "TR-01",
-      orderLineNumber: 1,
-      itemValue: 0,
-      depositDetails: {
-        "@type": "depositDetails",
-        "depositDetail": [
-          {
-            "@type": "depositDetail",
-            "depositAmount": 3727,
-            "depositTax": [
-              {
-                "@type": "taxAmount",
-                "taxRateId": "TR-1",
-                "taxRateKey": {
-                  "taxRateId": "TR-1",
-                  "effectiveDate": 1663525800000
-                },
-                "displayTaxCode": "18%",
-                "taxAmount": 8380000,
-                "scale": 4,
-                "taxRatePercentage": 0.18
-              },
-            ],
-            depositTenders: [
-             {
-               "@type": "depositTenderDetail",
-               "tenderKey": {
-                 "tenderId": "CASH_TR",
-                 "groupId": {
-                      "id": "All",
-                      "groupTypeId": "region",
-                      "groupHierarchyId": "All",
-                      "groupId": "TURKEY"
-                  }
-                 },
-                "depositAmount": "3727"
-             }
-            ]
-          }
-        ]
-      },
-      adjustments : [ 
-         {
-          "@type" : "customerOrderAdjustment",
-          "adjustmentNumber" : 1,
-          "adjustmentType" : "PROMOTION",
-          "adjustmentDetail" : "IS_09",
-          "description" : "Dearest Free - Exclude MMG",
-          "voided" : false,
-          "amount" : -1263        
-        },
-        {
-          "@type" : "customerOrderAdjustment",
-          "adjustmentNumber" : 2,
-          "adjustmentType" : "DISCOUNT",
-          "adjustmentDetail" : "ID-TR1",
-          "description" : "10% Item Discount (%)",
-          "voided" : false,
-          "amount" : -510    		
-      	}
-        
-      ],
-      data: {
-       ucLineItem: "1"
-      }
-    },
-    {
-      action: "setCustomer",
-      customerId: "1",
-      firstName: "John",
-      lastName: "Smith",
-      customerTaxAreaId: "1234",
-      initials: "A.B.C",
-      title: "Mr",
-      sex: "FEMALE",
-      dateOfBirth: 1679649452671,
-      otherNames: "Test Other Name",
-      jobTitle: "Software Enginner",
-      organisation: "Test Organisation",
-      customerAddress : {
-        countryCodeId : {
-          "id" : "TR"
-        },
-        street1 : "Street One",
-        street2 : "Street Two"
-      }
-    },
-  ]
-}
-
 const F11collection6Response = {
   posInstructions: [
     {
@@ -5006,7 +4899,8 @@ const F11collection6Response = {
       data: {
        ucLineItem: "2"
       }
-    }
+    },
+
   ]
 };
 
