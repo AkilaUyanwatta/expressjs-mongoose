@@ -4559,7 +4559,7 @@ const F11collection3Response = {
           "adjustmentDetail" : "PO-TR1",
           "description" : "Price Override Up",
           "voided" : false,
-          "amount" : 500    		
+          "amount" : -500    		
       	}
       ],
       data: {
@@ -4657,7 +4657,7 @@ const F11collection4Response = {
           "adjustmentDetail" : "PO-TR1",
           "description" : "Price Override Down",
           "voided" : false,
-          "amount" : -500    		
+          "amount" : 500    		
       	}
       ],
       data: {
@@ -4666,17 +4666,16 @@ const F11collection4Response = {
     },
     {
       action: "setCustomer",
-      customerId: "1",
-      firstName: "John",
-      lastName: "Smith",
-      customerTaxAreaId: "1234",
-      initials: "A.B.C",
-      title: "Mr",
+      customerId: "0001",
+      firstName: "Sandaru",
+      lastName: "Jayasuriya",
+      initials: "G S P",
+      title: "Miss",
       sex: "FEMALE",
       dateOfBirth: 1679649452671,
       otherNames: "Test Other Name",
       jobTitle: "Software Enginner",
-      organisation: "Test Organisation",
+      organisation: "Enactor UK",
       customerAddress : {
         countryCodeId : {
           "id" : "TR"
