@@ -4763,7 +4763,7 @@ const F11collection5Response = {
   ]
 };
 
-const collection7Response = {
+const F11collection7Response = {
   posInstructions: [
     {
       action: "addCollectionHeaderItem",
