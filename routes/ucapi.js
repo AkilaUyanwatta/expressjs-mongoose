@@ -359,6 +359,8 @@ function getResponse(uuid) {
      return importOrderResponse.F11collection5Response  
      case "F11C6":
      return importOrderResponse.F11collection6Response 
+    case "F11C7":
+      return importOrderResponse.F11collection7Response
     case "F11C8":
      return importOrderResponse.F11collection8Response 
     default:
