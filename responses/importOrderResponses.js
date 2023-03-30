@@ -4657,7 +4657,7 @@ const F11collection4Response = {
           "adjustmentDetail" : "PO-TR1",
           "description" : "Price Override Down",
           "voided" : false,
-          "amount" : 500    		
+          "amount" : 500  		
       	}
       ],
       data: {
@@ -4686,6 +4686,223 @@ const F11collection4Response = {
     }
   ]
 };
+
+const F11collection5Response = {
+  posInstructions: [
+    {
+      action: "addCollectionHeaderItem",
+      customerOrderId: "1",
+      isExternalOrder: true,
+      data: {
+        ucOrder: "12345"
+      }
+    },
+    {
+      action: "addCollectionItem",
+      orderUnitPrice: 5100,
+      orderNetPrice: 4590,
+      orderTaxAmount: 0, 
+      orderNotes: "Test notes",
+      collectionQuantity: 1,
+      collectionProductId: "TR-01",
+      orderLineNumber: 1,
+      itemValue: 0,
+      depositDetails: {
+        "@type": "depositDetails",
+        "depositDetail": [
+          {
+            "@type": "depositDetail",
+            "depositAmount": 4590,
+            "depositTax": [
+              {
+                "@type": "taxAmount",
+                "taxRateId": "TR-1",
+                "taxRateKey": {
+                  "taxRateId": "TR-1",
+                  "effectiveDate": 1663525800000
+                },
+                "displayTaxCode": "18%",
+                "taxAmount": 8380000,
+                "scale": 4,
+                "taxRatePercentage": 0.18
+              },
+            ],
+            depositTenders: [
+             {
+               "@type": "depositTenderDetail",
+               "tenderKey": {
+                 "tenderId": "CASH_TR",
+                 "groupId": {
+          			"id": "All",
+          			"groupTypeId": "region",
+          			"groupHierarchyId": "All",
+          			"groupId": "TURKEY"
+        		  }
+                 },
+                "depositAmount": "4590"
+             }
+            ]
+          }
+        ]
+      },
+      adjustments : [ 
+        {
+          "@type" : "customerOrderAdjustment",
+          "adjustmentNumber" : 1,
+          "adjustmentType" : "DISCOUNT",
+          "adjustmentDetail" : "ID-TR1",
+          "description" : "10% Item Discount (%)",
+          "voided" : false,
+          "amount" : -510    		
+      	}
+      ],
+      data: {
+       ucLineItem: "1"
+      }
+    }
+  ]
+};
+
+const F11collection6Response = {
+  posInstructions: [
+    {
+      action: "addCollectionHeaderItem",
+      customerOrderId: "1",
+      isExternalOrder: true,
+      data: {
+        ucOrder: "12345"
+      }
+    },
+    {
+      action: "addCollectionItem",
+      orderUnitPrice: 5100,
+      orderNetPrice: 5100,
+      orderTaxAmount: 0,
+      orderNotes: "Test notes",
+      collectionQuantity: 1,
+      collectionProductId: "TR-01",
+      orderLineNumber: 1,
+      itemValue: 0,
+      depositDetails: {
+        "@type": "depositDetails",
+        "depositDetail": [
+          {
+            "@type": "depositDetail",
+            "depositAmount": 3837,
+            "depositTax": [
+              {
+                "@type": "taxAmount",
+                "taxRateId": "TR-1",
+                "taxRateKey": {
+                  "taxRateId": "TR-1",
+                  "effectiveDate": 1663525800000
+                },
+                "displayTaxCode": "18%",
+                "taxAmount": 8380000,
+                "scale": 4,
+                "taxRatePercentage": 0.18
+              },
+            ],
+            depositTenders: [
+             {
+               "@type": "depositTenderDetail",
+              
+ "tenderKey": {
+                 "tenderId": "CASH_TR",
+                 "groupId": {
+                "id": "All",
+                "groupTypeId": "region",
+                "groupHierarchyId": "All",
+                "groupId": "TURKEY"
+              }
+                 },
+                "depositAmount": "3837"
+             }
+            ]
+          }
+        ]
+      },
+      adjustments : [
+        {
+          "@type" : "customerOrderAdjustment",
+          "adjustmentNumber" : 1,
+          "adjustmentType" : "PROMOTION",
+          "adjustmentDetail" : "IS_09",
+          "description" : "Dearest Free - Exclude MMG",
+          "voided" : false,
+          "amount" : -1263        
+        }
+      ],
+      data: {
+       ucLineItem: "1"
+      }
+    },
+    {
+      action: "addCollectionItem",
+      orderUnitPrice: 3100,
+      orderNetPrice: 15500,
+      orderTaxAmount: 0,
+      orderNotes: "Test notes",
+      collectionQuantity: 5,
+      collectionProductId: "TR-02",
+      orderLineNumber: 2,
+      itemValue: 0,
+      depositDetails: {
+        "@type": "depositDetails",
+        "depositDetail": [
+          {
+            "@type": "depositDetail",
+            "depositAmount": 11663,
+            "depositTax": [
+              {
+                "@type": "taxAmount",
+                "taxRateId": "TR-1",
+                "taxRateKey": {
+                  "taxRateId": "TR-1",
+                  "effectiveDate": 1663525800000
+                },
+                "displayTaxCode": "18%",
+                "taxAmount": 8380000,
+                "scale": 4,
+                "taxRatePercentage": 0.18
+              },
+            ],
+            depositTenders: [
+             {
+               "@type": "depositTenderDetail",
+               "tenderKey": {
+                 "tenderId": "CASH_TR",
+                 "groupId": {
+                "id": "All",
+                "groupTypeId": "region",
+                "groupHierarchyId": "All",
+                "groupId": "TURKEY"
+              }
+                 },
+                "depositAmount": "11663"
+             }
+            ]
+          }
+        ]
+      },
+      adjustments : [
+        {
+          "@type" : "customerOrderAdjustment",
+          "adjustmentNumber" : 1,
+          "adjustmentType" : "PROMOTION",
+          "adjustmentDetail" : "IS_09",
+          "description" : "Dearest Free - Exclude MMG",
+          "voided" : false,
+          "amount" : -3837        
+        }
+      ],
+      data: {
+       ucLineItem: "2"
+      }
+    }
+  ]
+};
+
 
 
 
@@ -4814,3 +5031,5 @@ exports.F11collection1Response =  F11collection1Response;
 exports.F11collection2Response =  F11collection2Response;
 exports.F11collection3Response =  F11collection3Response;
 exports.F11collection4Response =  F11collection4Response;
+exports.F11collection5Response =  F11collection5Response;
+exports.F11collection6Response =  F11collection6Response;
