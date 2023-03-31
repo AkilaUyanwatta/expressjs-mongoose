@@ -5010,7 +5010,82 @@ const F11collection8Response = {
     }
     ]
   };
-
+  const F11collection9Response = {
+    posInstructions: [
+      {
+        action: "addCollectionHeaderItem",
+        customerOrderId: "1",
+        isExternalOrder: true,
+        data: {
+          ucOrder: "12345"
+        }
+      },
+      {
+        action: "addCollectionItem",
+        orderUnitPrice: 5100,
+        orderNetPrice: 4590,
+        orderTaxAmount: 0, 
+        orderNotes: "Test notes",
+        collectionQuantity: 1,
+        collectionProductId: "TR-01",
+        orderLineNumber: 1,
+        itemValue: 0,
+        depositDetails: {
+          "@type": "depositDetails",
+          "depositDetail": [
+            {
+              "@type": "depositDetail",
+              "depositAmount": 4590,
+              "depositTax": [
+                {
+                  "@type": "taxAmount",
+                  "taxRateId": "TR-1",
+                  "taxRateKey": {
+                    "taxRateId": "TR-1",
+                    "effectiveDate": 1663525800000
+                  },
+                  "displayTaxCode": "18%",
+                  "taxAmount": 8380000,
+                  "scale": 4,
+                  "taxRatePercentage": 0.18
+                },
+              ],
+              depositTenders: [
+               {
+                 "@type": "depositTenderDetail",
+                 "tenderKey": {
+                   "tenderId": "CASH_TR",
+                   "groupId": {
+                  "id": "All",
+                  "groupTypeId": "region",
+                  "groupHierarchyId": "All",
+                  "groupId": "TURKEY"
+                }
+                   },
+                  "depositAmount": "4590"
+               }
+              ]
+            }
+          ]
+        },
+        adjustments : [ 
+          {
+            "@type" : "customerOrderAdjustment",
+            "adjustmentNumber" : 1,
+            "adjustmentType" : "DISCOUNT",
+            "adjustmentDetail" : "ID-TR1",
+            "description" : "10% Item Discount (%)",
+            "voided" : false,
+            "amount" : -510    		
+          }
+        ],
+        data: {
+         ucLineItem: "1"
+        }
+      }
+    ]
+  };
+  
 
 
 
@@ -5143,3 +5218,4 @@ exports.F11collection5Response =  F11collection5Response;
 exports.F11collection6Response =  F11collection6Response;
 exports.F11collection7Response =  F11collection7Response;
 exports.F11collection8Response =  F11collection8Response;
+exports.F11collection9Response =  F11collection9Response;
