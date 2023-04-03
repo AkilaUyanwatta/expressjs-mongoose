@@ -5203,7 +5203,81 @@ const F11collection8Response = {
     ]
   };
 
+const SetCustomerTest1 = {
+  posInstructions: [
+    {
+      action: "setItem",
+      itemId: "tr-01",
+      quantity: 2,
+      ucOrder: "12345",
+      ucLineItem: 1,
+      data: {
+        company: "JYSK",
+        location: "Aarhus",
+        disableModifyQuantity: "true",
+      },
+    },
+    {
+      action: "setCustomer",
+      customerId: "1",
+      firstName: "Tim",
+      lastName: "Southee",
+      taxIdentification: "ID1234ABC",
+      initials: "X.Y.Z",
+      title: "Mr",
+      sex: "MALE",
+      dateOfBirth: 1679649452671,
+      otherNames: "TimTim",
+      jobTitle: "Software Test Enginner",
+      organisation: "Test Organisation",
+      customerAddress : {
+        countryCodeId : {
+          "id" : "TR"
+        },
+        street1 : "Street One",
+        street2 : "Street Two"
+      }
+    },
+  ]
+}
 
+const SetCustomerTest2 = {
+  posInstructions: [
+    {
+      action: "setItem",
+      itemId: "tr-01",
+      quantity: 2,
+      ucOrder: "12345",
+      ucLineItem: 1,
+      data: {
+        company: "JYSK",
+        location: "Aarhus",
+        disableModifyQuantity: "true",
+      },
+    },
+    {
+      action: "setCustomer",
+      customerId: "1",
+      firstName: "Tim",
+      lastName: "Southee",
+      customerTaxAreaId: "AreaID1234ABC",
+      initials: "X.Y.Z",
+      title: "Mr",
+      sex: "MALE",
+      dateOfBirth: 1679649452671,
+      otherNames: "TimTim",
+      jobTitle: "Software Test Enginner",
+      organisation: "Test Organisation",
+      customerAddress : {
+        countryCodeId : {
+          "id" : "TR"
+        },
+        street1 : "Street One",
+        street2 : "Street Two"
+      }
+    },
+  ]
+}
 
 
 exports.addItemResponse = addItemResponse;
@@ -5265,6 +5339,10 @@ exports.orderTest20Response=orderTest20Response;
 exports.orderTest22Response=orderTest22Response;
 exports.orderTest23Response=orderTest23Response;
 exports.orderTest24Response=orderTest24Response;
+
+//Set Customer
+exports.SetCustomerTest2=SetCustomerTest2;
+exports.SetCustomerTest1=SetCustomerTest1;
 
 
 // UC specific
