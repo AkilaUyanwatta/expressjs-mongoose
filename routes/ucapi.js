@@ -346,6 +346,12 @@ function getResponse(uuid) {
       return importOrderResponse.collection8Response
     case "C9":
       return importOrderResponse.collection9Response
+
+      //Set Customer
+    case "SCT1":
+      return importOrderResponse.SetCustomerTest1
+    case "SCT2":
+      return importOrderResponse.SetCustomerTest2
       //F11 responses
     case "F11C1":
       return importOrderResponse.F11collection1Response
