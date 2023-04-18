@@ -3102,6 +3102,95 @@ const collection1Response = {
   ]
 };
 
+const collectionTR1Response = {
+  posInstructions: [
+    {
+      action: "addCollectionHeaderItem",
+      customerOrderId: "1",
+      isExternalOrder: true,
+      data: {
+        ucOrder: "12345"
+      }
+    },
+    {
+      action: "addCollectionItem",
+      orderUnitPrice: 1250,
+      orderNetPrice: 1250,
+      orderTaxAmount: 250,
+      orderNotes: "Test notes",
+      collectionQuantity: 1,
+      collectionProductId: "tr-01",
+      orderLineNumber: 1,
+      itemValue: 0,
+      depositDetails: {
+        "@type": "depositDetails",
+        "depositDetail": [
+          {
+            "@type": "depositDetail",
+            "depositAmount": 1250,
+            "depositTax": [
+              {
+                "@type": "taxAmount",
+                "taxRateId": "DK_1",
+                "taxRateKey": {
+                  "taxRateId": "DK_1",
+                  "effectiveDate": 1427155200000
+                },
+                "displayTaxCode": "Liable for Full Tax",
+                "taxAmount": 2500000,
+                "scale": 4,
+                "taxRatePercentage": 0.25
+              },
+
+            ]
+          }
+        ]
+      },
+      data: {
+        ucLineItem: "1"
+      }
+    },
+    {
+      action: "addCollectionItem",
+      orderUnitPrice: 1250,
+      orderNetPrice: 3750,
+      orderTaxAmount: 750,
+      orderNotes: "Test notes 2",
+      collectionQuantity: 3,
+      collectionProductId: "tr-03",
+      orderLineNumber: 2,
+      itemValue: 1250,
+      depositDetails: {
+        "@type": "depositDetails",
+        "depositDetail": [
+          {
+            "@type": "depositDetail",
+            "depositAmount": 1250,
+            "depositTax": [
+              {
+                "@type": "taxAmount",
+                "taxRateId": "DK_1",
+                "taxRateKey": {
+                  "taxRateId": "DK_1",
+                  "effectiveDate": 1427155200000
+                },
+                "displayTaxCode": "Liable for Full Tax",
+                "taxAmount": 5000000,
+                "scale": 4,
+                "taxRatePercentage": 0.25
+              }
+            ]
+          }
+        ]
+      },
+
+      data: {
+        ucLineItem: "2"
+      }
+    }
+  ]
+};
+
 const collection2Response = {
   posInstructions: [
     {
@@ -5410,6 +5499,8 @@ exports.F11collection3Response =  F11collection3Response;
 exports.F11collection4Response =  F11collection4Response;
 exports.F11collection5Response =  F11collection5Response;
 exports.F11collection6Response =  F11collection6Response;
+exports.collectionTR1Response =  collectionTR1Response;
+collectionTR1Response
 // exports.F11collection7Response =  F11collection7Response;
 exports.F11collection8Response =  F11collection8Response;
 exports.F11collection9Response =  F11collection9Response;
