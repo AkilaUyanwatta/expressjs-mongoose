@@ -3131,9 +3131,9 @@ const collectionTR1Response = {
             "depositTax": [
               {
                 "@type": "taxAmount",
-                "taxRateId": "DK_1",
+                "taxRateId": "TR-1",
                 "taxRateKey": {
-                  "taxRateId": "DK_1",
+                  "taxRateId": "TR-1",
                   "effectiveDate": 1427155200000
                 },
                 "displayTaxCode": "Liable for Full Tax",
@@ -3169,9 +3169,9 @@ const collectionTR1Response = {
             "depositTax": [
               {
                 "@type": "taxAmount",
-                "taxRateId": "DK_1",
+                "taxRateId": "TR-1",
                 "taxRateKey": {
-                  "taxRateId": "DK_1",
+                  "taxRateId": "TR-1",
                   "effectiveDate": 1427155200000
                 },
                 "displayTaxCode": "Liable for Full Tax",
