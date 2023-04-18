@@ -4419,7 +4419,7 @@ const F11collection1Response = {
       collectionQuantity: 1,
       collectionProductId: "TR-01",
       orderLineNumber: 1,
-      itemValue: 0,
+      itemValue: 2000,
       depositDetails: {
         "@type": "depositDetails",
         "depositDetail": [
