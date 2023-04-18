@@ -375,6 +375,8 @@ function getResponse(uuid) {
     return importOrderResponse.F11collection10Response
     case "TRC1":
      return importOrderResponse.collectionTR1Response
+    case "TRC0":
+     return importOrderResponse.F11collection0Response
     default:
       const response = importOrderResponse[uuid];
       if (response) {
