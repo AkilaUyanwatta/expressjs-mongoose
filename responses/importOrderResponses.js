@@ -4425,7 +4425,7 @@ const F11collection1Response = {
         "depositDetail": [
           {
             "@type": "depositDetail",
-            "depositAmount": 5500,
+            "depositAmount": 20000,
             "depositTax": [
               {
                 "@type": "taxAmount",
@@ -4452,7 +4452,7 @@ const F11collection1Response = {
           			"groupId": "TURKEY"
         		  }
                  },
-                "depositAmount": "5500"
+                "depositAmount": "2000"
              }
             ]
           }
