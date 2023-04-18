@@ -4518,7 +4518,7 @@ const F11collection1Response = {
     },
     {
       action: "addCollectionItem",
-      orderUnitPrice: 5100,
+      orderUnitPrice: 5500,
       orderNetPrice: 5500,
       orderTaxAmount: 0,
       orderNotes: "Test notes",
@@ -4531,7 +4531,7 @@ const F11collection1Response = {
         "depositDetail": [
           {
             "@type": "depositDetail",
-            "depositAmount": 20000,
+            "depositAmount": 3500,
             "depositTax": [
               {
                 "@type": "taxAmount",
@@ -4558,23 +4558,12 @@ const F11collection1Response = {
           			"groupId": "TURKEY"
         		  }
                  },
-                "depositAmount": "2000"
+                "depositAmount": "3500"
              }
             ]
           }
         ]
       },
-      adjustments : [
-        {
-          "@type" : "customerOrderAdjustment",
-          "adjustmentNumber" : 1,
-          "adjustmentType" : "DISCOUNT",
-          "adjustmentDetail" : "",
-          "description" : "Price Override Up",
-          "voided" : false,
-          "amount" : -400    		
-      	}
-      ],
       data: {
        ucLineItem: "1"
       }

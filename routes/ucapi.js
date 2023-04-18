@@ -356,7 +356,7 @@ function getResponse(uuid) {
     case "F11C1":
       return importOrderResponse.F11collection1Response
     case "F11C2": 
-      return importOrderResponse.F11collection1Response
+      return importOrderResponse.F11collection2Response
     case "F11C3":
       return importOrderResponse.F11collection3Response 
     case "F11C4": 
