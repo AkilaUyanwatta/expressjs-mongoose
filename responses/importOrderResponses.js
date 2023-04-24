@@ -3771,8 +3771,32 @@ orderTest21Response = {
   ],
 };
 
+//cancel orders - Turkey
 
-
+const tRcancelOrderResponse1 = {
+  posInstructions: [
+    {
+      action: "setReturnItem",
+      itemId: "tr-01",
+      quantity: 70,
+      price: 10000,
+      ucOrder: "test_4",
+      ucLineItem: 1,
+    },
+    {
+      action: "setDeliveryOption",
+      type: "address",
+      description: "Address delivery",
+      reference: "addressDelivery",
+    },
+    {
+      action: "addTenderItem",
+      tenderId: "CASH_TR",
+      tenderAmount: 2500,
+      ucTenderType: "PREPAYMENT",
+    },
+  ],
+};
 
 const orderTest22Response = {
   posInstructions: [
@@ -3792,12 +3816,13 @@ const orderTest22Response = {
     },
     {
       action: "addTenderItem",
-      tenderId: "CASH",
+      tenderId: "CASH_TR",
       tenderAmount: 2500,
       ucTenderType: "PREPAYMENT",
     },
   ],
 };
+
 const orderTest23Response = {
   posInstructions: [
     {
@@ -5462,6 +5487,10 @@ const SetCustomerTest2 = {
     },
   ]
 }
+
+//Cancel order - TR
+
+exports.tRcancelOrderResponse1 = tRcancelOrderResponse1;
 
 
 exports.addItemResponse = addItemResponse;
