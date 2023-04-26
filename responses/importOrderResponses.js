@@ -5528,9 +5528,9 @@ const JYSK3895 = {
             "depositAmount": 0,
             "depositTax": [
               {
-                "taxRateId": "TR_1",
+                "taxRateId": "TR-1",
                 "taxRateKey": {
-                  "taxRateId": "TR_1",
+                  "taxRateId": "TR-1",
                   "effectiveDate": 1666908000000
                 },
                 "displayTaxCode": "Liable for Full Tax ",
