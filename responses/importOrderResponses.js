@@ -5488,7 +5488,116 @@ const SetCustomerTest2 = {
     },
   ]
 }
-
+const JYSK3895 = {
+  posInstructions:[
+    {
+      "action": "setTxText",
+      "operation": "CREATE",
+      "position": "com.jysk.pos.uc.working-copy-business-key",
+      "value": "2537a763-66b9-4251-bb7b-bfc892e017a2"
+    },
+    {
+      "action": "setTxText",
+      "operation": "CREATE",
+      "position": "com.jysk.pos.uc.sync-order.id",
+      "value": "2537a763-66b9-4251-bb7b-bfc892e017a2"
+    },
+    {
+      "action": "addCollectionHeaderItem",
+      "operation": "CREATE",
+      "customerOrderId": "4208383216",
+      "externalOrder": true,
+      "data": {
+        "ucOrder": "2537a763-66b9-4251-bb7b-bfc892e017a2"
+      }
+    },
+    {
+      "action": "addCollectionItem",
+      "operation": "CREATE",
+      "orderUnitPrice": 1399900.00,
+      "orderNetPrice": 1399900.00,
+      "orderTaxAmount": 0.0,
+      "orderNotes": "",
+      "collectionQuantity": 1.0,
+      "collectionProductId": "3237323",
+      "orderLineNumber": 1,
+      "itemValue": 1399900.00,
+      "depositDetails": {
+        "depositDetail": [
+          {
+            "depositAmount": 0,
+            "depositTax": [
+              {
+                "taxRateId": "TR_1",
+                "taxRateKey": {
+                  "taxRateId": "TR_1",
+                  "effectiveDate": 1666908000000
+                },
+                "displayTaxCode": "Liable for Full Tax ",
+                "taxAmount": 213544,
+                "scale": 4,
+                "taxRatePercentage": 0.18
+              }
+            ]
+          }
+        ]
+      },
+      "data": {
+        "ucImportedOrder": "4208383216",
+        "ucLineItem": "1",
+        "ucLine-import-created-by-store": "T010",
+        "disableModifyQuantity": "true",
+        "ucOrder": "2537a763-66b9-4251-bb7b-bfc892e017a2",
+        "ucLine-import-type": "CUSTOMER_ORDER",
+        "ucLine-import-delivery-group-id": "1",
+        "ucLineItem-import": "1",
+        "ucLine-import-request-type": "HANDOUT",
+        "ucLineRequestBusinessKey": "6392e32b-2c93-497f-bdb2-e5df26f6b4d2"
+      }
+    },
+    {
+      "action": "setReceiptInvoiceDetails",
+      "operation": "CREATE",
+      "invoiceReference": "",
+      "invoiceRequested": true,
+      "emailInvoice": false,
+      "printInvoice": true
+    },
+    {
+      "action": "addTenderItem",
+      "operation": "CREATE",
+      "tenderId": "PRE_PAYMENT_TR",
+      "tenderAmount": 1399900
+    },
+    {
+      "action": "setTxText",
+      "operation": "CREATE",
+      "position": "com.jysk.pos.uc.import-order.id",
+      "value": "6392e32b-2c93-497f-bdb2-e5df26f6b4d2"
+    },
+    {
+      "action": "setTxText",
+      "operation": "CREATE",
+      "position": "com.jysk.pos.uc.sales-order-number",
+      "value": "4208383216"
+    },
+    {
+      "action": "setPartyType",
+      "operation": "CREATE",
+      "partyType": "B2C"
+    },
+    {
+      "action": "setCustomer",
+      "operation": "CREATE",
+      "firstName": "Tobias",
+      "lastName": "Frisch",
+      "companyName": " ",
+      "customerGroupId": "",
+      "resetCustomerGroups": true,
+    "taxIdentification" : "9999999"
+    }
+  ]
+};
 //Cancel order - TR
 
 exports.tRcancelOrderResponse1 = tRcancelOrderResponse1;
@@ -5631,3 +5740,4 @@ exports.F11collection0Response =  F11collection0Response;
 exports.F11collection8Response =  F11collection8Response;
 exports.F11collection9Response =  F11collection9Response;
 exports.F11collection10Response =  F11collection10Response;
+exports.JYSK3895 = JYSK3895;

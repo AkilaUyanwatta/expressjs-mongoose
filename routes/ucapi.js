@@ -379,6 +379,8 @@ function getResponse(uuid) {
      return importOrderResponse.F11collection0Response
     case "TRC2":
       return importOrderResponse.tRcancelOrderResponse1
+    case "JYSK3895":
+        return importOrderResponse.JYSK3895
     default:
       const response = importOrderResponse[uuid];
       if (response) {
