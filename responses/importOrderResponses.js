@@ -5531,7 +5531,7 @@ const JYSK3895 = {
                 "taxRateId": "TR-1",
                 "taxRateKey": {
                   "taxRateId": "TR-1",
-                  "effectiveDate": 1666908000000
+                  "effectiveDate": 1663525800000
                 },
                 "displayTaxCode": "Liable for Full Tax ",
                 "taxAmount": 213544,
