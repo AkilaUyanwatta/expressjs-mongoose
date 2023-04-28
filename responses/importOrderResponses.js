@@ -3773,6 +3773,85 @@ orderTest21Response = {
 
 //cancel orders - Turkey
 
+const tRcancelOrderResponse2 = {
+  posInstructions:[
+  {
+    "action": "setTxText",
+    "operation": "CREATE",
+    "position": "com.jysk.pos.uc.working-copy-business-key",
+    "value": "4ad1d602-5d9c-4c42-8b2d-890e6af1bd78"
+  },
+  {
+    "action": "setTxText",
+    "operation": "CREATE",
+    "position": "com.jysk.pos.uc.sync-order.id",
+    "value": "4ad1d602-5d9c-4c42-8b2d-890e6af1bd78"
+  },
+  {
+    "action": "setItem",
+    "operation": "CREATE",
+    "itemId": "tr-03",
+    "quantity": 71,
+    "price": 10000.00,
+    "ucOrder": "4ad1d602-5d9c-4c42-8b2d-890e6af1bd78",
+    "ucLineItem": "1",
+    "data": {
+      "ucImportedOrder": "4300444840",
+      "ucLineItem": "1",
+      "ucLine-import-created-by-store": "T001",
+      "disableModifyQuantity": "true",
+      "ucOrder": "4ad1d602-5d9c-4c42-8b2d-890e6af1bd78",
+      "ucLine-import-type": "CUSTOMER_ORDER",
+      "ucLine-import-delivery-group-id": "1",
+      "ucLineItem-import": "1",
+      "ucLine-import-request-type": "CANCEL",
+      "ucLineRequestBusinessKey": "ec824ee6-a3d1-414f-84dc-2324df45a65f"
+    },
+    "forcePrice": true
+  },
+  {
+    "action": "addTenderItem",
+    "operation": "CREATE",
+    "tenderId": "CASH_TR_1",
+    "tenderAmount": 710000
+  },
+  {
+    "action": "setTxText",
+    "operation": "CREATE",
+    "position": "com.jysk.pos.uc.import-order.id",
+    "value": "ec824ee6-a3d1-414f-84dc-2324df45a65f"
+  },
+  {
+    "action": "setTxText",
+    "operation": "CREATE",
+    "position": "com.jysk.pos.uc.sales-order-number",
+    "value": "4300444840"
+  },
+  {
+    "action": "setPartyType",
+    "operation": "CREATE",
+    "partyType": "B2C"
+  },
+  {
+    "action": "setCustomer",
+    "operation": "CREATE",
+    "firstName": "Tobias",
+    "lastName": "Frisch",
+    "companyName": " ",
+    "customerGroupId": "",
+    "resetCustomerGroups": true,
+    "customerAddress": {
+      "postCode": "",
+      "town": "",
+      "street1": "Add1",
+      "county": "TR001000",
+      "email": "A@g.com"
+    },
+    "customerTaxAreaId": "11111111111"
+  }
+]
+}
+
 
 const tRcancelOrderResponse1 = {
   posInstructions: [
@@ -5601,6 +5680,7 @@ const JYSK3895 = {
 //Cancel order - TR
 
 exports.tRcancelOrderResponse1 = tRcancelOrderResponse1;
+exports.tRcancelOrderResponse2 = tRcancelOrderResponse2;
 
 
 exports.addItemResponse = addItemResponse;
