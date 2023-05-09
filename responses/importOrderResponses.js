@@ -3878,6 +3878,45 @@ const tRcancelOrderResponse1 = {
   ],
 };
 
+//TR -  Cancel order (setReturnItem)
+
+const tRcancelOrderResponseRet1 = {
+  posInstructions: [
+    {
+            action: "setReturnItem",
+            itemId: "tr-01",
+            quantity: 2,
+            price: 3100,
+            ucOrder: "12345",
+            ucLineItem: 2,
+            returnReasonId: "IR-TR-20",
+            returnItemDetail: {
+              "originalTenders" : [ {
+                "@type": "transactionTenderAmount",
+                "amount" : -6200,
+                "currencyId" : "TRL",
+                "foreignAmount" : 0,
+                "description" : "Cash TR",
+                "tenderId" : {
+                  "tenderId" : "CARD_TR",
+                  "groupId" : {
+                    "groupTypeId" : "region",
+                    "groupHierarchyId" : "All",
+                    "id" : "TURKEY",
+                  }
+                }
+              }],
+              "effectOnInventory" : "RET",
+              "originalLineNumber" : 1,
+              "originalSalespersonUserId" : "1234"
+            },
+            "serialNumber" : "9876554321",
+            "referenceNumber" : "ABC123",
+            "sellingCode" : "1001000-01"
+          }
+        ]
+}
+
 const orderTest22Response = {
   posInstructions: [
     {
@@ -5821,3 +5860,6 @@ exports.F11collection8Response =  F11collection8Response;
 exports.F11collection9Response =  F11collection9Response;
 exports.F11collection10Response =  F11collection10Response;
 exports.JYSK3895 = JYSK3895;
+
+//TR - Cancel order (setReturnItem)
+exports.tRcancelOrderResponseRet1 =  tRcancelOrderResponseRet1;
