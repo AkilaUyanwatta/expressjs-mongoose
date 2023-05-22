@@ -3999,7 +3999,7 @@ const tRcancelOrderResponse3 = {
     },
     {
       action: "addTenderItem",
-      tenderId: "CASH_TR",
+      tenderId: "CASH_UC",
       tenderAmount: 50000,
       ucTenderType: "PREPAYMENT",
     },
