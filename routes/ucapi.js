@@ -384,6 +384,8 @@ function getResponse(uuid) {
 //TR - Cancel order (setReturnItem)
     case "TRCR1":
      return importOrderResponse.tRcancelOrderResponseRet1
+    case "TRC4":
+     return importOrderResponse.tRcancelOrderResponse3
     case "JYSK3895":
         return importOrderResponse.JYSK3895
     default:

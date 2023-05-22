@@ -3981,6 +3981,31 @@ const orderTest24Response = {
   ],
 }
 
+const tRcancelOrderResponse3 = {
+  posInstructions: [
+    {
+      action: "setItem",
+      itemId: "tr-03",
+      quantity: 5,
+      price: 50000,
+      ucOrder: "test_4",
+      ucLineItem: 1,
+    },
+    {
+      action: "setDeliveryOption",
+      type: "address",
+      description: "Address delivery",
+      reference: "addressDelivery",
+    },
+    {
+      action: "addTenderItem",
+      tenderId: "CASH_TR",
+      tenderAmount: 50000,
+      ucTenderType: "PREPAYMENT",
+    },
+  ],
+};
+
 
 const JYSKData2 = {
   posInstructions:  [ 
@@ -5720,6 +5745,7 @@ const JYSK3895 = {
 
 exports.tRcancelOrderResponse1 = tRcancelOrderResponse1;
 exports.tRcancelOrderResponse2 = tRcancelOrderResponse2;
+exports.tRcancelOrderResponse3 = tRcancelOrderResponse3;
 
 
 exports.addItemResponse = addItemResponse;
