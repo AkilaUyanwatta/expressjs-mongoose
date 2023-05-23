@@ -3967,6 +3967,47 @@ const orderTest25Response = {
   ],
 };
 
+const orderTest26Response = {
+  posInstructions: [
+    {
+      "action": "setItem",
+      "operation": "CREATE",
+      "itemId": "tr-03",
+      "quantity": 5,
+      "price": 50000,
+      "ucOrder": "f2de5d97-b17b-434d-9cfc-6fa8d752f284",
+      "ucLineItem": "1",
+      "data": {
+        "ucImportedOrder": "4208363988",
+        "ucLineItem": "1",
+        "ucLine-import-created-by-store": "T010",
+        "disableModifyQuantity": "true",
+        "ucOrder": "f2de5d97-b17b-434d-9cfc-6fa8d752f284",
+        "ucLine-import-type": "CUSTOMER_ORDER",
+        "ucLine-import-delivery-group-id": "1",
+        "ucLineItem-import": "1",
+        "ucLine-import-request-type": "CANCEL",
+        "ucLineRequestBusinessKey": "be97eae8-e7f4-42e6-979c-b4a49614a24b"
+      },
+      "forcePrice": true
+    },
+
+    {
+      action: "setDeliveryOption",
+      type: "address",
+      description: "Address delivery",
+      reference: "addressDelivery",
+    },
+  
+    {
+      "action": "addTenderItem",
+      "operation": "CREATE",
+      "tenderId": "CASH_UC",
+      "tenderAmount": 50000
+    }
+  ]
+}
+
 const orderTest23Response = {
   posInstructions: [
     {
@@ -5833,6 +5874,7 @@ exports.orderTest22Response=orderTest22Response;
 exports.orderTest23Response=orderTest23Response;
 exports.orderTest24Response=orderTest24Response;
 exports.orderTest25Response=orderTest25Response;
+exports.orderTest26Response=orderTest26Response;
 
 //Set Customer
 exports.SetCustomerTest2=SetCustomerTest2;

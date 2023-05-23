@@ -260,6 +260,8 @@ function getResponse(uuid) {
       return importOrderResponse.orderTest22Response;
     case "TR5":
       return importOrderResponse.orderTest25Response;
+    case "TR6":
+      return importOrderResponse.orderTest26Response;
     case "TR2":
       return importOrderResponse.orderTest23Response;
     case "TR3":
