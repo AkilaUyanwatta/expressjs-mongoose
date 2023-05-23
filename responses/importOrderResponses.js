@@ -3942,6 +3942,31 @@ const orderTest22Response = {
   ],
 };
 
+const orderTest25Response = {
+  posInstructions: [
+    {
+      action: "setItem",
+      itemId: "tr-01",
+      quantity: 2,
+      price: 10000,
+      ucOrder: "test_4",
+      ucLineItem: 1,
+    },
+    {
+      action: "setDeliveryOption",
+      type: "address",
+      description: "Address delivery",
+      reference: "addressDelivery",
+    },
+    {
+      action: "addTenderItem",
+      tenderId: "CASH_UC",
+      tenderAmount: 2500,
+      ucTenderType: "PREPAYMENT",
+    },
+  ],
+};
+
 const orderTest23Response = {
   posInstructions: [
     {
@@ -5807,6 +5832,7 @@ exports.orderTest20Response=orderTest20Response;
 exports.orderTest22Response=orderTest22Response;
 exports.orderTest23Response=orderTest23Response;
 exports.orderTest24Response=orderTest24Response;
+exports.orderTest25Response=orderTest25Response;
 
 //Set Customer
 exports.SetCustomerTest2=SetCustomerTest2;
