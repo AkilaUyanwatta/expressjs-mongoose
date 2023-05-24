@@ -4052,8 +4052,8 @@ const tRcancelOrderResponse3 = {
     {
       action: "setItem",
       itemId: "tr-03",
-      quantity: 5,
-      price: 50000,
+      quantity: 80,
+      price: 800000,
       ucOrder: "test_4",
       ucLineItem: 1,
     },
@@ -4066,7 +4066,7 @@ const tRcancelOrderResponse3 = {
     {
       action: "addTenderItem",
       tenderId: "CASH_UC",
-      tenderAmount: 50000,
+      tenderAmount: 800000,
       ucTenderType: "PREPAYMENT",
     },
   ],
