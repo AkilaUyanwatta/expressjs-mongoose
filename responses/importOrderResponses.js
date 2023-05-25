@@ -929,7 +929,7 @@ const orderTest9ResponseTR = {
     },
     {
       action: "addTenderItem",
-      tenderId: "CASH_DK",
+      tenderId: "CASH_TR",
       tenderAmount: 5000,
       ucTenderType: "PREPAYMENT",
     },
