@@ -1092,7 +1092,7 @@ const orderTest11ResponseTR = {
     {
       action: "setItem",
       itemId: "tr-12",
-      quantity: 11,
+      quantity: 1,
       price: 1000,
       ucOrder: "test_2",
       ucLineItem: 2,
