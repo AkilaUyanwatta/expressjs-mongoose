@@ -726,7 +726,7 @@ const orderTest1ResponseTR = {
   posInstructions: [
     {
       action: "setItem",
-      itemId: "tr-01",
+      itemId: "tr-07",
       quantity: 2,
       price: 4000,
       ucOrder: "test_1",
@@ -740,7 +740,7 @@ const orderTest1ResponseTR = {
     },
     {
       action: "setItem",
-      itemId: "tr-03",
+      itemId: "tr-11",
       quantity: 1,
       price: 5000,
       ucOrder: "test_1",
@@ -755,7 +755,7 @@ const orderTest1ResponseTR = {
     },
     {
       action: "setItem",
-      itemId: "tr-01",
+      itemId: "tr-07",
       quantity: 1,
       price: 2000,
       ucOrder: "test_1",
