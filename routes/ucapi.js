@@ -236,6 +236,8 @@ function getResponse(uuid) {
       return importOrderResponse.orderTest10Response;
     case "23":
       return importOrderResponse.orderTest11Response;
+    case "TR23":
+      return importOrderResponse.orderTest11ResponseTR;
     case "23_new":
       return importOrderResponse.orderTest11ResponseNew2;
     case "24":

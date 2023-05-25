@@ -930,7 +930,7 @@ const orderTest9ResponseTR = {
     {
       action: "addTenderItem",
       tenderId: "CASH_TR",
-      tenderAmount: 5000,
+      tenderAmount: 7000,
       ucTenderType: "PREPAYMENT",
     },
   ],
@@ -1053,6 +1053,74 @@ const orderTest11Response = {
       action: "addTenderItem",
       tenderId: "CASH_DK",
       tenderAmount: 6000,
+      ucTenderType: "PREPAYMENT",
+    },
+  ],
+};
+
+const orderTest11ResponseTR = {
+  posInstructions: [
+    {
+      action: "setItem",
+      itemId: "tr-07",
+      quantity: 1,
+      price: 2000,
+      ucOrder: "test_2",
+      ucLineItem: 4,
+      forcePrice: true,
+    },
+    {
+      action: "setDeliveryOption",
+      type: "store",
+      description: "Store delivery",
+      reference: "locationCollectionDelivery",
+    },
+    {
+      action: "setItem",
+      itemId: "1",
+      quantity: 3,
+      price: 6000,
+      ucOrder: "test_2",
+      ucLineItem: 1,
+    },
+    {
+      action: "setDeliveryOption",
+      type: "address",
+      description: "Address delivery",
+      reference: "addressDelivery",
+    },
+    {
+      action: "setItem",
+      itemId: "tr-12",
+      quantity: 11,
+      price: 1000,
+      ucOrder: "test_2",
+      ucLineItem: 2,
+    },
+    {
+      action: "setDeliveryOption",
+      type: "address",
+      description: "Address delivery",
+      reference: "addressDelivery",
+    },
+    {
+      action: "setItem",
+      itemId: "tr-12",
+      quantity: 1,
+      price: 1000,
+      ucOrder: "test_2",
+      ucLineItem: 3,
+    },
+    {
+      action: "setDeliveryOption",
+      type: "store",
+      description: "Store delivery",
+      reference: "locationCollectionDelivery",
+    },
+    {
+      action: "addTenderItem",
+      tenderId: "CASH_TR",
+      tenderAmount: 10000,
       ucTenderType: "PREPAYMENT",
     },
   ],
@@ -5950,6 +6018,7 @@ exports.orderTest9Response = orderTest9Response;
 exports.orderTest9ResponseTR = orderTest9ResponseTR;
 exports.orderTest10Response = orderTest10Response;
 exports.orderTest11Response = orderTest11Response;
+exports.orderTest11ResponseTR = orderTest11ResponseTR;
 exports.orderTest11ResponseNew2 = orderTest11ResponseNew2;
 exports.orderTest12Response = orderTest12Response;
 exports.orderTest13Response = orderTest13Response;
