@@ -883,6 +883,59 @@ const orderTest9Response = {
   ],
 };
 
+const orderTest9ResponseTR = {
+  posInstructions: [
+    {
+      action: "setItem",
+      itemId: "tr-07",
+      quantity: 2,
+      price: 4000,
+      ucOrder: "test_2",
+      ucLineItem: 1,
+    },
+    {
+      action: "setDeliveryOption",
+      type: "address",
+      description: "Address delivery",
+      reference: "addressDelivery",
+    },
+    {
+      action: "setItem",
+      itemId: "tr-07",
+      quantity: 1,
+      price: 2000,
+      ucOrder: "test_2",
+      ucLineItem: 2,
+    },
+    {
+      action: "setDeliveryOption",
+      type: "address",
+      description: "Address delivery",
+      reference: "addressDelivery",
+    },
+    {
+      action: "setItem",
+      itemId: "tr-12",
+      quantity: 1,
+      price: 1000,
+      ucOrder: "test_2",
+      ucLineItem: 3,
+    },
+    {
+      action: "setDeliveryOption",
+      type: "address",
+      description: "Address delivery",
+      reference: "addressDelivery",
+    },
+    {
+      action: "addTenderItem",
+      tenderId: "CASH_DK",
+      tenderAmount: 5000,
+      ucTenderType: "PREPAYMENT",
+    },
+  ],
+};
+
 const orderTest10Response = {
   posInstructions: [
     {
@@ -5894,6 +5947,7 @@ exports.orderTest6Response = orderTest6Response;
 exports.orderTest7Response = orderTest7Response;
 exports.orderTest8Response = orderTest8Response;
 exports.orderTest9Response = orderTest9Response;
+exports.orderTest9ResponseTR = orderTest9ResponseTR;
 exports.orderTest10Response = orderTest10Response;
 exports.orderTest11Response = orderTest11Response;
 exports.orderTest11ResponseNew2 = orderTest11ResponseNew2;
