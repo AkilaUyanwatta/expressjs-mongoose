@@ -722,6 +722,59 @@ const orderTest1Response = {
   ],
 };
 
+const orderTest1ResponseTR = {
+  posInstructions: [
+    {
+      action: "setItem",
+      itemId: "tr-01",
+      quantity: 2,
+      price: 4000,
+      ucOrder: "test_1",
+      ucLineItem: 1,
+    },
+    {
+      action: "setDeliveryOption",
+      type: "address",
+      description: "Address delivery",
+      reference: "addressDelivery",
+    },
+    {
+      action: "setItem",
+      itemId: "tr-03",
+      quantity: 1,
+      price: 5000,
+      ucOrder: "test_1",
+      ucLineItem: 2,
+      fulfilledQuantity: 1,
+    },
+    {
+      action: "setDeliveryOption",
+      type: "address",
+      description: "Address delivery",
+      reference: "addressDelivery",
+    },
+    {
+      action: "setItem",
+      itemId: "tr-01",
+      quantity: 1,
+      price: 2000,
+      ucOrder: "test_1",
+      ucLineItem: 3,
+    },
+    {
+      action: "setDeliveryOption",
+      type: "address",
+      description: "Address delivery",
+      reference: "addressDelivery",
+    },
+    {
+      action: "addTenderItem",
+      tenderId: "CASH_TR",
+      tenderAmount: 5000,
+      ucTenderType: "PREPAYMENT",
+    },
+  ],
+};
 
 const orderTest8Response = {
   posInstructions: [
@@ -5832,6 +5885,7 @@ exports.addItemWithPrepaidAmountResponse = addItemWithPrepaidAmountResponse;
 exports.addFulfilledItemResponse = addFulfilledItemResponse;
 exports.addFulfilledItemWithPrepaidAmountResponse = addFulfilledItemWithPrepaidAmountResponse;
 exports.orderTest1Response = orderTest1Response;
+exports.orderTest1ResponseTR = orderTest1ResponseTR;
 exports.orderTest2Response = orderTest2Response;
 exports.orderTest3Response = orderTest3Response;
 exports.orderTest4Response = orderTest4Response;
