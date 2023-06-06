@@ -768,6 +768,15 @@ const orderTest1ResponseTR = {
       reference: "addressDelivery",
     },
     {
+      action: "setDeliveryAddress",
+      operation: "CREATE",
+      postCode: "8000",
+      street1: "Nørregade 49",
+      town: "Aarhus C",
+      houseNumber: "25/A",
+      organisation: "Vingummi Nørregade",
+    },
+    {
       action: "addTenderItem",
       tenderId: "CASH_TR",
       tenderAmount: 5000,
