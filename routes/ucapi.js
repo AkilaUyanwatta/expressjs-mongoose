@@ -212,8 +212,10 @@ function getResponse(uuid) {
       return importOrderResponse.addFulfilledItemWithPrepaidAmountResponse;
     case "13":
       return importOrderResponse.orderTest1Response;
-      case "TR13":
+    case "TR13":
       return importOrderResponse.orderTest1ResponseTR;
+    case "13123":
+      return importOrderResponse.orderTest1Response123;
     case "14":
       return importOrderResponse.orderTest2Response;
     case "15":

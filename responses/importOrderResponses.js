@@ -722,6 +722,27 @@ const orderTest1Response = {
   ],
 };
 
+const orderTest1Response123 = {
+  posInstructions: [
+    {
+      action: "setItem",
+      itemId: "1001000",
+      quantity: 1,
+      price: 3500,
+      ucOrder: "test_1",
+      ucLineItem: 1,
+    },
+    {
+      action: "setItem",
+      itemId: "1001000",
+      quantity: 1,
+      price: 3500,
+      ucOrder: "test_1",
+      ucLineItem: 2,
+    },
+  ],
+};
+
 const orderTest1ResponseTR = {
   posInstructions: [
     {
@@ -6017,6 +6038,7 @@ exports.addFulfilledItemResponse = addFulfilledItemResponse;
 exports.addFulfilledItemWithPrepaidAmountResponse = addFulfilledItemWithPrepaidAmountResponse;
 exports.orderTest1Response = orderTest1Response;
 exports.orderTest1ResponseTR = orderTest1ResponseTR;
+exports.orderTest1Response123 = orderTest1Response123;
 exports.orderTest2Response = orderTest2Response;
 exports.orderTest3Response = orderTest3Response;
 exports.orderTest4Response = orderTest4Response;
