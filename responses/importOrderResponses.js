@@ -723,21 +723,41 @@ const orderTest1Response = {
 };
 
 const orderTest1Response123 = {
+  // posInstructions: [
+  //   {
+  //     action: "setItem",
+  //     itemId: "1001000",
+  //     quantity: 1,
+  //     price: 3000,
+  //     ucOrder: "test_1",
+  //     ucLineItem: 1,
+  //     forcePrice: true,
+  //   },
+  //   {
+  //     action: "setItem",
+  //     itemId: "1001000",
+  //     quantity: 1,
+  //     price: 3000,
+  //     ucOrder: "test_1",
+  //     ucLineItem: 2,
+  //     forcePrice: true,
+  //   },
+  // ],
   posInstructions: [
     {
       action: "setItem",
-      itemId: "1001000",
+      itemId: "8",
       quantity: 1,
-      price: 3000,
+      price: 20000,
       ucOrder: "test_1",
       ucLineItem: 1,
       forcePrice: true,
     },
     {
       action: "setItem",
-      itemId: "1001000",
-      quantity: 1,
-      price: 3000,
+      itemId: "9",
+      quantity: 4,
+      price: 18000,
       ucOrder: "test_1",
       ucLineItem: 2,
       forcePrice: true,
