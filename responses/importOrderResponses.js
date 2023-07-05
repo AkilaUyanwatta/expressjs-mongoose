@@ -757,7 +757,7 @@ const orderTest1Response123 = {
       action: "setItem",
       itemId: "9",
       quantity: 4,
-      price: 18000,
+      price: 4500,
       ucOrder: "test_1",
       ucLineItem: 2,
       forcePrice: true,
