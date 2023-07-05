@@ -731,6 +731,7 @@ const orderTest1Response123 = {
       price: 3500,
       ucOrder: "test_1",
       ucLineItem: 1,
+      forcePrice: true,
     },
     {
       action: "setItem",
@@ -739,6 +740,7 @@ const orderTest1Response123 = {
       price: 3500,
       ucOrder: "test_1",
       ucLineItem: 2,
+      forcePrice: true,
     },
   ],
 };
