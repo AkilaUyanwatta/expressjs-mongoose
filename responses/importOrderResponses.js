@@ -6043,6 +6043,41 @@ const JYSK3895 = {
     }
   ]
 };
+
+//forcePrice
+
+const forcePriceTest1 = {
+posInstructions: [
+  {
+    action: "setItem",
+    itemId: "5",
+    quantity: 1,
+    price: 1000,
+    ucOrder: "test_1",
+    ucLineItem: 1,
+    forcePrice: true,
+  },
+  {
+    action: "setItem",
+    itemId: "6",
+    quantity: 1,
+    price: 800,
+    ucOrder: "test_1",
+    ucLineItem: 2,
+    forcePrice: true,
+  },
+  {
+    action: "setItem",
+    itemId: "7",
+    quantity: 1,
+    price: 900,
+    ucOrder: "test_1",
+    ucLineItem: 2,
+    forcePrice: true,
+  },
+],
+}
+
 //Cancel order - TR
 
 exports.tRcancelOrderResponse1 = tRcancelOrderResponse1;
@@ -6197,3 +6232,6 @@ exports.JYSK3895 = JYSK3895;
 
 //TR - Cancel order (setReturnItem)
 exports.tRcancelOrderResponseRet1 =  tRcancelOrderResponseRet1;
+
+//forcePrice
+exports.forcePriceTest1 = forcePriceTest1;

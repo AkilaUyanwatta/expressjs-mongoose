@@ -400,6 +400,10 @@ function getResponse(uuid) {
      return importOrderResponse.tRcancelOrderResponse3
     case "JYSK3895":
         return importOrderResponse.JYSK3895
+
+//forcePrice
+    case "FP01":
+       return importOrderResponse.forcePriceTest1
     default:
       const response = importOrderResponse[uuid];
       if (response) {
