@@ -6078,6 +6078,66 @@ posInstructions: [
 ],
 }
 
+const forcePriceTest2 = {
+  posInstructions: [
+    {
+      action: "setItem",
+      itemId: "1001000",
+      quantity: 1,
+      price: 250,
+      ucOrder: "test_1",
+      ucLineItem: 1,
+      forcePrice: true,
+    },
+  
+  ],
+  }
+
+  const forcePriceTest3 = {
+    posInstructions: [
+      {
+        action: "setItem",
+        itemId: "1001000",
+        quantity: 1,
+        price: 250,
+        ucOrder: "test_1",
+        ucLineItem: 1,
+        forcePrice: false,
+      },
+    
+    ],
+    }
+
+    const forcePriceTest4 = {
+      posInstructions: [
+        {
+          action: "setItem",
+          itemId: "1001000",
+          quantity: 1,
+          price: 200,
+          ucOrder: "test_1",
+          ucLineItem: 1,
+          forcePrice: true,
+        },
+      
+      ],
+      }
+
+      const forcePriceTest5 = {
+        posInstructions: [
+          {
+            action: "setItem",
+            itemId: "1001000",
+            quantity: 1,
+            price: 200,
+            ucOrder: "test_1",
+            ucLineItem: 1,
+            forcePrice: false,
+          },
+        
+        ],
+        }
+
 //Cancel order - TR
 
 exports.tRcancelOrderResponse1 = tRcancelOrderResponse1;
@@ -6235,3 +6295,7 @@ exports.tRcancelOrderResponseRet1 =  tRcancelOrderResponseRet1;
 
 //forcePrice
 exports.forcePriceTest1 = forcePriceTest1;
+exports.forcePriceTest2 = forcePriceTest2;
+exports.forcePriceTest3 = forcePriceTest3;
+exports.forcePriceTest4 = forcePriceTest4;
+exports.forcePriceTest5 = forcePriceTest5;
