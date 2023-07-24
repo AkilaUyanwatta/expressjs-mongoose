@@ -412,6 +412,8 @@ function getResponse(uuid) {
        return importOrderResponse.forcePriceTest4
     case "FP05":
        return importOrderResponse.forcePriceTest5
+    case "FP06":
+      return importOrderResponse.forcePriceTest6
     default:
       const response = importOrderResponse[uuid];
       if (response) {
