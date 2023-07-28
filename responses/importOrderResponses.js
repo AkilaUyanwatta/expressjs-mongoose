@@ -6162,7 +6162,7 @@ const forcePriceTest2 = {
                 price: 1500,
                 ucOrder: "test_1",
                 ucLineItem: 1,
-                forcePrice: true,
+                forcePrice: false,
               },
             
             ],
