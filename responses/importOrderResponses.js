@@ -6153,6 +6153,21 @@ const forcePriceTest2 = {
           ],
           }
 
+          const forcePriceTest7 = {
+            posInstructions: [
+              {
+                action: "setItem",
+                itemId: "1001000",
+                quantity: 1,
+                price: 1500,
+                ucOrder: "test_1",
+                ucLineItem: 1,
+                forcePrice: true,
+              },
+            
+            ],
+            }
+
 //Cancel order - TR
 
 exports.tRcancelOrderResponse1 = tRcancelOrderResponse1;
@@ -6315,3 +6330,4 @@ exports.forcePriceTest3 = forcePriceTest3;
 exports.forcePriceTest4 = forcePriceTest4;
 exports.forcePriceTest5 = forcePriceTest5;
 exports.forcePriceTest6 = forcePriceTest6;
+exports.forcePriceTest7 = forcePriceTest7;
