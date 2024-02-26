@@ -266,7 +266,7 @@ const upulitest2 ={
       "value": "Aase"
     }
   ],
-}
+};
 const addItemResponseWithNotes = {
   posInstructions: [
     ...addItemResponse.posInstructions,
