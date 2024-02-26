@@ -402,6 +402,8 @@ function getResponse(uuid) {
         return importOrderResponse.JYSK3895
     case "ul123":
         return importOrderResponse.addItemResponseupuli
+    case "ul1234":
+       return importOrderResponse.upulitest2
 
 //forcePrice
     case "FP01":

@@ -55,10 +55,218 @@ const addItemResponseupuli = {
       ucOrder: "12345",
       ucLineItem: 2,
     },
+
+    
     
   ],
 };
-
+const upulitest2 ={
+  posInstructions:[
+    {
+      "action": "setTxText",
+      "operation": "CREATE",
+      "position": "com.jysk.pos.uc.working-copy-business-key",
+      "value": "aa62a47b-67db-4bdf-90eb-0cb21c9a9a64"
+    },
+    {
+      "action": "setTxText",
+      "operation": "CREATE",
+      "position": "com.jysk.pos.uc.sync-order.id",
+      "value": "aa62a47b-67db-4bdf-90eb-0cb21c9a9a64"
+    },
+    {
+      "action": "setItem",
+      "operation": "CREATE",
+      "itemId": "3601101",
+      "quantity": 1,
+      "price": 549900.00,
+      "ucOrder": "aa62a47b-67db-4bdf-90eb-0cb21c9a9a64",
+      "ucLineItem": "1",
+      "data": {
+        "ucOrder": "aa62a47b-67db-4bdf-90eb-0cb21c9a9a64",
+        "ucLineItem": "1",
+        "ucLineRequestBusinessKey": "84d31dcd-1878-4887-b53b-798fec591a72",
+        "ucImportedOrder": "4209521403",
+        "ucLineItem-import": "1",
+        "ucLine-import-type": "HOME_ADDRESS_DELIVERY",
+        "ucLine-import-request-type": "EDIT",
+        "ucLine-import-delivery-group-id": "1"
+      },
+      "forcePrice": false,
+      "voidable": true
+    },
+    {
+      "action": "setDeliveryOption",
+      "operation": "CREATE",
+      "type": "address",
+      "reference": "addressDelivery",
+      "promise": ""
+    },
+    {
+      "action": "setItem",
+      "operation": "CREATE",
+      "itemId": "5517821",
+      "quantity": 1,
+      "price": 22200.00,
+      "ucOrder": "aa62a47b-67db-4bdf-90eb-0cb21c9a9a64",
+      "ucLineItem": "2",
+      "data": {
+        "ucOrder": "aa62a47b-67db-4bdf-90eb-0cb21c9a9a64",
+        "ucLineItem": "2",
+        "ucLineRequestBusinessKey": "84d31dcd-1878-4887-b53b-798fec591a72",
+        "ucImportedOrder": "4209521403",
+        "ucLineItem-import": "2",
+        "ucLine-import-type": "HOME_ADDRESS_DELIVERY",
+        "ucLine-import-request-type": "EDIT",
+        "ucLine-sap-pricing-condition": "ZDEL",
+        "ucLine-promotion-reference": "ZDEL_22200_",
+        "ucLine-import-delivery-group-id": "1"
+      },
+      "forcePrice": false,
+      "voidable": true
+    },
+    {
+      "action": "setDeliveryOption",
+      "operation": "CREATE",
+      "type": "address",
+      "reference": "addressDelivery",
+      "promise": ""
+    },
+    {
+      "action": "setItem",
+      "operation": "CREATE",
+      "itemId": "5517833",
+      "quantity": 1,
+      "price": 7100.00,
+      "ucOrder": "aa62a47b-67db-4bdf-90eb-0cb21c9a9a64",
+      "ucLineItem": "3",
+      "data": {
+        "ucOrder": "aa62a47b-67db-4bdf-90eb-0cb21c9a9a64",
+        "ucLineItem": "3",
+        "ucLineRequestBusinessKey": "84d31dcd-1878-4887-b53b-798fec591a72",
+        "ucImportedOrder": "4209521403",
+        "ucLineItem-import": "3",
+        "ucLine-import-type": "HOME_ADDRESS_DELIVERY",
+        "ucLine-import-request-type": "EDIT",
+        "ucLine-sap-pricing-condition": "ZDEL",
+        "ucLine-promotion-reference": "ZDEL_7100_",
+        "ucLine-import-delivery-group-id": "1"
+      },
+      "forcePrice": false,
+      "voidable": true
+    },
+    {
+      "action": "setDeliveryOption",
+      "operation": "CREATE",
+      "type": "address",
+      "reference": "addressDelivery",
+      "promise": ""
+    },
+    {
+      "action": "setItem",
+      "operation": "CREATE",
+      "itemId": "9099900",
+      "quantity": 1,
+      "price": 44900.00,
+      "ucOrder": "aa62a47b-67db-4bdf-90eb-0cb21c9a9a64",
+      "ucLineItem": "4",
+      "data": {
+        "ucOrder": "aa62a47b-67db-4bdf-90eb-0cb21c9a9a64",
+        "ucLineItem": "4",
+        "ucLineRequestBusinessKey": "84d31dcd-1878-4887-b53b-798fec591a72",
+        "ucImportedOrder": "4209521403",
+        "ucLineItem-import": "4",
+        "ucLine-import-type": "HOME_ADDRESS_DELIVERY",
+        "ucLine-import-request-type": "EDIT",
+        "ucLine-import-delivery-group-id": "1"
+      },
+      "forcePrice": true,
+      "voidable": true
+    },
+    {
+      "action": "setDeliveryOption",
+      "operation": "CREATE",
+      "type": "address",
+      "reference": "addressDelivery",
+      "promise": ""
+    },
+    {
+      "action": "addTenderItem",
+      "operation": "CREATE",
+      "tenderId": "UC_CASH_DK",
+      "tenderAmount": 577764,
+      "voidable": false
+    },
+    {
+      "action": "setTxText",
+      "operation": "CREATE",
+      "position": "com.jysk.pos.uc.import-order.id",
+      "value": "84d31dcd-1878-4887-b53b-798fec591a72"
+    },
+    {
+      "action": "setTxText",
+      "operation": "CREATE",
+      "position": "com.jysk.pos.uc.sales-order-number",
+      "value": "4209521403"
+    },
+    {
+      "action": "setPartyType",
+      "operation": "CREATE",
+      "partyType": "B2B"
+    },
+    {
+      "action": "setTxText",
+      "operation": "CREATE",
+      "position": "com.jysk.pos.uc.original-customer-id",
+      "value": "1D02800085"
+    },
+    {
+      "action": "setTxText",
+      "operation": "CREATE",
+      "position": "com.jysk.pos.uc.house-number",
+      "value": "2"
+    },
+    {
+      "action": "setCustomer",
+      "operation": "CREATE",
+      "customerId": "1D02800085",
+      "firstName": "Aase",
+      "lastName": "Andersen",
+      "companyName": "Steffens Montageservice",
+      "customerGroupHierarchyId": "DK_CUST_GROUPS",
+      "customerGroupId": "B2B8",
+      "resetCustomerGroups": true,
+      "customerAddress": {
+        "postCode": "7130",
+        "town": "Juelsminde",
+        "street1": "Bisholt Møllevej",
+        "county": "",
+        "email": "aand@jysk.com",
+        "phone1": "23223366",
+        "phone2": "23434706"
+      },
+      "taxIdentification": "DK41283483"
+    },
+    {
+      "action": "setTxText",
+      "operation": "CREATE",
+      "position": "com.jysk.pos.uc.order.vat",
+      "value": "DK41283483"
+    },
+    {
+      "action": "setTxText",
+      "operation": "CREATE",
+      "position": "com.jysk.pos.uc.order.reqNo",
+      "value": "98908"
+    },
+    {
+      "action": "setTxText",
+      "operation": "CREATE",
+      "position": "com.jysk.pos.uc.order.buyer",
+      "value": "Aase"
+    }
+  ],
+}
 const addItemResponseWithNotes = {
   posInstructions: [
     ...addItemResponse.posInstructions,
@@ -6265,6 +6473,7 @@ exports.orderTest24Response=orderTest24Response;
 exports.orderTest25Response=orderTest25Response;
 exports.orderTest26Response=orderTest26Response;
 exports.addItemResponseupuli=addItemResponseupuli;
+exports.upulitest2=upulitest2;
 
 //Set Customer
 exports.SetCustomerTest2=SetCustomerTest2;
