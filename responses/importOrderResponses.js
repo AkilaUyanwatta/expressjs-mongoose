@@ -33,7 +33,31 @@ const addItemResponse = {
     },
   ],
 };
-
+const addItemResponseupuli = {
+  posInstructions: [
+    // set item
+    {
+      action: "setItem",
+      itemId: "5517833",
+      quantity: 1,
+      ucOrder: "12345",
+      ucLineItem: 1,
+      data: {
+        company: "JYSK",
+        location: "Aarhus",
+      },
+    },
+    
+    {
+      action: "setItem",
+      itemId: "9099900",
+      quantity: 1,
+      ucOrder: "12345",
+      ucLineItem: 2,
+    },
+    
+  ],
+};
 
 const addItemResponseWithNotes = {
   posInstructions: [
@@ -6240,6 +6264,7 @@ exports.orderTest23Response=orderTest23Response;
 exports.orderTest24Response=orderTest24Response;
 exports.orderTest25Response=orderTest25Response;
 exports.orderTest26Response=orderTest26Response;
+exports.addItemResponseupuli=addItemResponseupuli;
 
 //Set Customer
 exports.SetCustomerTest2=SetCustomerTest2;

@@ -400,6 +400,8 @@ function getResponse(uuid) {
      return importOrderResponse.tRcancelOrderResponse3
     case "JYSK3895":
         return importOrderResponse.JYSK3895
+    case "ul123":
+        return importOrderResponse.addItemResponseupuli
 
 //forcePrice
     case "FP01":
