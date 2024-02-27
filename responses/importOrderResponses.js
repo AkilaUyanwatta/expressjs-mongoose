@@ -194,7 +194,7 @@ const upulitest2 ={
       "action": "addTenderItem",
       "operation": "CREATE",
       "tenderId": "CASH_DK",
-      "tenderAmount": 577764,
+      "tenderAmount": 74200,
       "voidable": false
     },
     {
